@@ -10,6 +10,7 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.4rem;
   color: $white;
+  line-height: 1.5;
 }
 *,
 *:before,
@@ -22,3 +23,5 @@ body {
 @import "blocks/sidebar.scss";
 @import "blocks/main.scss";
 @import "blocks/container.scss";
+@import "blocks/profile.scss";
+@import "blocks/social.scss";
