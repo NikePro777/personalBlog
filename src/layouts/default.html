@@ -3,9 +3,18 @@
   <head>
     {{> head }}
   </head>
+
   <body>
-    <aside class="sidebar">Sidebar</aside>
-    {{> header }} {{> body }} {{> footer }}
+    <div class="page">
+      <!-- Header-->
+      {{> header }}
+      <!-- Sidebar-->
+      {{>sidebar}}
+      <!-- Main-->
+      <main class="main">
+        <div class="container">{{> body }}</div>
+      </main>
+    </div>
 
     <script src="assets/js/app.js"></script>
   </body>
