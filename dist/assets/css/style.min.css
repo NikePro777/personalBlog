@@ -438,13 +438,77 @@ body {
 }
 
 .header {
-  height: 30px;
+  display: flex;
   width: calc(100% - 300px);
-  background-color: #444;
+  background-color: #0d0d0d;
+  box-shadow: 0 5px 22px 0 rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
   right: 0;
   z-index: 1000;
+}
+.header .header__left {
+  width: 60%;
+}
+.header .header__rigth {
+  display: flex;
+  width: 40%;
+  justify-content: flex-end;
+}
+
+.nav .nav__list {
+  display: flex;
+}
+.nav .nav__list .nav__item {
+  position: relative;
+}
+.nav .nav__list .nav__item .subnav {
+  padding: 0.5rem 0;
+  display: none;
+  width: 16.5rem;
+  background-color: #3137c9;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 0 0 5px 5px;
+}
+.nav .nav__list .nav__item .subnav .subnav__link {
+  display: block;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.45rem 1.2rem;
+}
+.nav .nav__list .nav__item:hover .nav__link {
+  background-color: #3137c9;
+}
+.nav .nav__list .nav__item:hover > .subnav {
+  display: block;
+}
+.nav .nav__list .nav__link {
+  display: block;
+  padding: 1.4rem;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.2s linear;
+}
+.nav .nav__list .nav__link.has-subnav {
+  position: relative;
+  padding-right: 3rem;
+}
+.nav .nav__list .nav__link.has-subnav:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.3rem;
+  border-style: solid;
+  border-width: 6px 5px 0 5px;
+  border-color: #fff transparent transparent transparent;
 }
 
 .sidebar {
@@ -478,6 +542,25 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 2rem;
+}
+
+.search {
+  width: 100%;
+  background-color: #202020;
+  max-width: 21rem;
+}
+.search .search__input {
+  display: block;
+  width: 100%;
+  padding: 1.2rem 2rem;
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.search .search__input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .main {
@@ -550,15 +633,15 @@ body {
 }
 .btn--red {
   background-color: #ed3024;
-  box-shadow: 0 7px 17px -10px rgba(205, 37, 26, 0.2);
+  box-shadow: 0 7px 17px -10px rgba(242, 63, 63, 0.3);
 }
 .btn--red:hover {
-  background-color: #e51f13;
+  background-color: #db1e12;
 }
 .btn--blue {
   background-color: #3137c9;
   box-shadow: 0 7px 17px -10px rgba(42, 95, 231, 0.3);
 }
 .btn--blue:hover {
-  background-color: #2c31b4;
+  background-color: #2a2fac;
 }
