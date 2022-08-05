@@ -497,6 +497,7 @@ body {
     top: 100%;
     left: 0;
     border-radius: 0 0 5px 5px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 .nav .nav__list .nav__item .subnav .subnav__link {
@@ -505,6 +506,11 @@ body {
     text-decoration: none;
     color: #fff;
     padding: 0.45rem 1.2rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.nav .nav__list .nav__item .subnav .subnav__link:hover {
+    background-color: #2c31b4;
 }
 
 .nav .nav__list .nav__item:hover .nav__link {
