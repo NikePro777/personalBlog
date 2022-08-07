@@ -777,6 +777,29 @@ body {
 .post .post__header {
   margin: -3.5rem -3.5rem 2.5rem;
 }
+.post .post__header--video {
+  margin: 0 0 2.5rem;
+}
+.post .post__header .embed {
+  position: relative;
+  overflow: hidden;
+}
+.post .post__header .embed:before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+.post .post__header .embed iframe,
+.post .post__header .embed video,
+.post .post__header .embed object,
+.post .post__header .embed embed {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
 .post .post__header .post__image {
   display: block;
   max-width: 100%;
@@ -837,4 +860,34 @@ body {
 }
 .post .post__footer .post__read:hover {
   text-decoration: underline;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+}
+.pagination .pagination__item {
+  margin: 0 0.5rem;
+}
+.pagination .pagination__item .pagination__link {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  background-color: #0d0d0d;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.2s linear;
+  line-height: 4rem;
+}
+.pagination .pagination__item .pagination__link:hover {
+  background-color: #121212;
+}
+.pagination .pagination__item .pagination__link.active {
+  background-color: #3137c9;
+  box-shadow: 0 0 10px rgba(49, 55, 201, 0.15);
 }
