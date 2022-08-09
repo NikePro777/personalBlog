@@ -23,7 +23,7 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="#"> Главная </a>
+                <a class="nav__link" href="index.html"> Главная </a>
               </li>
               <li class="nav__item">
                 <a class="nav__link has-subnav" href="#">Статьи</a>
@@ -121,12 +121,13 @@
   </div>
   <div class="post__content">
     <div class="post__text">
+      <!--post__text-->
       <h2>Title h2</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-        laudantium est cupiditate numquam fuga, sit velit fugit perferendis
-        corporis autem, ipsam necessitatibus magnam blanditiis itaque suscipit
-        alias magni neque. Ipsam.
+        Lorem ipsum dolor <a href="">sit amet consectetur</a> adipisicing elit.
+        Assumenda laudantium est cupiditate numquam fuga, sit velit fugit
+        perferendis corporis autem, ipsam necessitatibus magnam blanditiis
+        itaque suscipit alias magni neque. Ipsam.
       </p>
       <h3>Title h3</h3>
       <p>
@@ -142,7 +143,8 @@
         corporis autem, ipsam necessitatibus magnam blanditiis itaque suscipit
         alias magni neque. Ipsam.
       </p>
-      <img src="" alt="" />
+      <p><img src="assets/images/image.jpg" alt="" /></p>
+
       <ul>
         <li>item</li>
         <li>item</li>
@@ -160,8 +162,61 @@
           <td>3</td>
         </tr>
       </table>
+
+      <p>
+        <span class="fr-video">
+          <iframe
+            src="https://www.youtube.com/embed/QxTeE5EMiWI"
+            title="Fullstack приложение с нуля.  MERN-Blog 2022. Mongodb/Express.js/React.js/Node.js"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe
+        ></span>
+      </p>
     </div>
+    <!--/post__text-->
+
+    <div class="related">
+      <h3 class="related__title">Интересно почитать</h3>
+      <ul class="related__list">
+        <li class="related__list-item">
+          <h4 class="related__list-title">
+            <a href="#">Как я сходил на FrontEnd Conf 2022</a>
+          </h4>
+          <time class="related__list-date" data-time="2021-06-21 19:21"
+            >21.06.2021</time
+          >
+        </li>
+        <li class="related__list-item">
+          <h4 class="related__list-title">
+            <a href="#">Как я сходил на FrontEnd Conf 2022</a>
+          </h4>
+          <time class="related__list-date" data-time="2021-06-21 19:21"
+            >21.06.2021</time
+          >
+        </li>
+        <li class="related__list-item">
+          <h4 class="related__list-title">
+            <a href="#">Как я сходил на FrontEnd Conf 2022</a>
+          </h4>
+          <time class="related__list-date" data-time="2021-06-21 19:21"
+            >21.06.2021</time
+          >
+        </li>
+        <li class="related__list-item">
+          <h4 class="related__list-title">
+            <a href="#">Как я сходил на FrontEnd Conf 2022</a>
+          </h4>
+          <time class="related__list-date" data-time="2021-06-21 19:21"
+            >21.06.2021</time
+          >
+        </li>
+      </ul>
+    </div>
+    <!--/post__related-->
   </div>
+  <!--/post__actions ~~~ post__content-->
 </article>
 
 </div>
