@@ -725,6 +725,14 @@ a:hover {
     background-color: #2a2fac;
 }
 
+.btn--rounded {
+    border-radius: 0.41em;
+}
+
+.btn--sm {
+    padding: 0.7em 1.25em;
+}
+
 .stories {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1163,8 +1171,87 @@ a:hover {
     font-size: 1.4rem;
     color: #f3eba2;
     font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .related__list-title a {
     color: inherit;
+}
+
+.related__list-date {
+    font-size: 1.2rem;
+    color: #828282;
+}
+
+.comments {
+    margin-top: 3rem;
+}
+
+.comments__title {
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.form__group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.form__control {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #3f3f3f;
+    border-radius: 0;
+    font-family: inherit;
+    font-size: 1.4rem;
+    box-shadow: none;
+    color: #fff;
+}
+
+.form__control:focus + .form__line {
+    width: 100%;
+}
+
+.form__control::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.form__control::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.form__control:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.form__control::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.form__control::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.form__control--textarea {
+    overflow: hidden;
+    height: 30px;
+    resize: none;
+}
+
+.form__line {
+    width: 0;
+    height: 1px;
+    background-color: #3137c9;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: width 0.2s linear;
 }
