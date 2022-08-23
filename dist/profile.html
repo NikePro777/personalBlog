@@ -12,7 +12,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     
-    <title></title>
+    <title>EDatskiy | Profile</title>
   </head>
 
   <body>
@@ -41,10 +41,12 @@
         <div class="header__rigth">
           <nav class="nav">
             <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link" href="#">Профиль</a></li>
+              <li class="nav__item">
+                <a class="nav__link" href="profile.html">Профиль</a>
+              </li>
             </ul>
           </nav>
-          <form class="search" action="/" method="post">
+          <form class="search" action="search.html" method="get">
             <input class="search__input" type="text" placeholder="Поиск по блогу" />
           </form>
         </div>
@@ -89,13 +91,66 @@
         <!-- /Sidebar content-->
       
         <div class="sidebar__footer">
-          <a class="btn btn--red" href="#">Мои работы</a>
+          <a class="btn btn--red" href="works.html">Мои работы</a>
           <button class="btn btn--blue" type="button">Написать мне</button>
         </div>
       </aside>
       <!-- Main-->
       <main class="main">
         <div class="container">
+<h1 class="page__title">Профиль</h1>
+
+<form action="/" class="form" method="post">
+  <div class="cabinet">
+    <div class="cabinet__form">
+      <div class="form__group form__group--md">
+        <input
+          class="form__control"
+          type="text"
+          placeholder="Ваше имя"
+          value="Vasa"
+        />
+        <span class="form__line"></span>
+      </div>
+
+      <div class="form__group form__group--md">
+        <input
+          class="form__control"
+          type="email"
+          placeholder="Ваша почта"
+          value="e@mail"
+        />
+        <span class="form__line"></span>
+      </div>
+
+      <div class="form__group form__group--md">
+        <input
+          class="form__control"
+          type="password"
+          placeholder="Новый пароль"
+        />
+        <span class="form__line"></span>
+      </div>
+
+      <div class="form__group form__group--md">
+        <input
+          class="form__control"
+          type="password"
+          placeholder="Подтвердите пароль"
+        />
+        <span class="form__line"></span>
+      </div>
+    </div>
+    <div class="cabinet__avatar">
+      <img src="https://via.placeholder.com/150" alt="" />
+    </div>
+  </div>
+
+  <button class="btn btn--blue btn--rounded btn--sm" type="submit">
+    Сохранить
+  </button>
+</form>
+
 </div>
       </main>
     </div>
