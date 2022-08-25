@@ -1216,3 +1216,33 @@ a:hover {
   margin-top: auto;
   text-align: right;
 }
+
+.cabinet {
+  display: flex;
+}
+
+.cabinet__form {
+  width: 34rem;
+}
+
+.cabinet__avatar {
+  flex-grow: 1;
+  padding-left: 11rem;
+}
+.cabinet__avatar img {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.cabinet__file {
+  font-size: 1.4rem;
+  color: #3137c9;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.cabinet__file:hover {
+  text-decoration: none;
+}
+.cabinet__file input {
+  display: none;
+}
