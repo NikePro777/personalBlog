@@ -12,7 +12,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     
-    <title>EDatskiy | Profile</title>
+    <title>EDatskiy | Signup</title>
   </head>
 
   <body>
@@ -98,60 +98,31 @@
       <!-- Main-->
       <main class="main">
         <div class="container">
-<h1 class="page__title">Профиль</h1>
+<h1 class="page__title page__title--center">Регистрация</h1>
 
-<form action="/" class="form" method="post">
-  <div class="cabinet">
-    <div class="cabinet__form">
-      <div class="form__group form__group--md">
-        <input
-          class="form__control"
-          type="text"
-          placeholder="Ваше имя"
-          value="Vasa"
-        />
-        <span class="form__line"></span>
-      </div>
-
-      <div class="form__group form__group--md">
-        <input
-          class="form__control"
-          type="email"
-          placeholder="Ваша почта"
-          value="e@mail"
-        />
-        <span class="form__line"></span>
-      </div>
-
-      <div class="form__group form__group--md">
-        <input
-          class="form__control"
-          type="password"
-          placeholder="Новый пароль"
-        />
-        <span class="form__line"></span>
-      </div>
-
-      <div class="form__group form__group--md">
-        <input
-          class="form__control"
-          type="password"
-          placeholder="Подтвердите пароль"
-        />
-        <span class="form__line"></span>
-      </div>
-    </div>
-    <div class="cabinet__avatar">
-      <img src="https://via.placeholder.com/150" alt="ava" />
-      <label class="cabinet__file">
-        <input type="file" />
-        Выбрать аватар
-      </label>
-    </div>
+<form class="form form--auth" action="/" method="post">
+  <div class="form__group form__group--md">
+    <input class="form__control" type="text" placeholder="Ваше имя" />
+    <span class="form__line"></span>
   </div>
-
+  <div class="form__group form__group--md">
+    <input class="form__control" type="text" placeholder="Ваш e-mail" />
+    <span class="form__line"></span>
+  </div>
+  <div class="form__group form__group--md">
+    <input class="form__control" type="password" placeholder="Пароль" />
+    <span class="form__line"></span>
+  </div>
+  <div class="form__group form__group--md">
+    <input
+      class="form__control"
+      type="password"
+      placeholder="Подтвердите пароль"
+    />
+    <span class="form__line"></span>
+  </div>
   <button class="btn btn--blue btn--rounded btn--sm" type="submit">
-    Сохранить
+    Регистрация
   </button>
 </form>
 
