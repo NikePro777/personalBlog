@@ -469,6 +469,10 @@ a:hover {
     margin-bottom: 3rem;
 }
 
+.page__title--center {
+    text-align: center;
+}
+
 .header {
     display: -ms-flexbox;
     display: flex;
@@ -1257,6 +1261,11 @@ a:hover {
 
 .comments__reply:hover {
     text-decoration: underline;
+}
+
+.form--auth {
+    max-width: 28rem;
+    margin: 0 auto;
 }
 
 .form__group {
