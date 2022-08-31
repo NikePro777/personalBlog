@@ -11,6 +11,9 @@ body {
   font-size: 1.4rem;
   color: $white;
   line-height: 1.5;
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 a {
   text-decoration: none;
@@ -42,3 +45,4 @@ a {
 @import "blocks/form.scss";
 @import "blocks/work.scss";
 @import "blocks/cabinet.scss";
+@import "blocks/modal.scss";
