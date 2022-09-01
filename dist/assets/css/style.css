@@ -444,6 +444,10 @@ body {
     line-height: 1.5;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
 }
@@ -729,7 +733,7 @@ a:hover {
     box-shadow: 0 7px 17px -10px rgba(242, 63, 63, 0.3);
 }
 
-.btn--red:hover {
+.btn--red:hover, .btn--red:focus {
     background-color: #db1e12;
 }
 
@@ -738,7 +742,7 @@ a:hover {
     box-shadow: 0 7px 17px -10px rgba(42, 95, 231, 0.3);
 }
 
-.btn--blue:hover {
+.btn--blue:hover, .btn--blue:focus {
     background-color: #2a2fac;
 }
 
@@ -1468,4 +1472,75 @@ a:hover {
 
 .cabinet__file input {
     display: none;
+}
+
+.modal {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    z-index: 1010;
+}
+
+.modal__content {
+    position: relative;
+    width: 100%;
+    max-width: 50rem;
+    padding: 8rem 8rem 2.5rem;
+    background-color: #202020;
+    border-radius: 5px;
+}
+
+.modal__close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.2s linear, -webkit-transform 0.2s linear;
+    transition: transform 0.2s linear, opacity 0.2s linear;
+    transition: transform 0.2s linear, opacity 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.modal__close:hover {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    opacity: 1;
+}
+
+.modal__footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+    color: #b2b2b2;
+}
+
+.modal__footer li {
+    margin: 0 0.5rem;
+}
+
+.modal__footer a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.modal__footer a:hover {
+    text-decoration: none;
 }
