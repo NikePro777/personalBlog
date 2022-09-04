@@ -470,15 +470,47 @@ a:hover {
   right: 0;
   z-index: 1000;
 }
+@media (max-width: 991px) {
+  .header {
+    width: 100%;
+  }
+}
 .header .header__left {
   width: 60%;
+}
+@media (max-width: 700px) {
+  .header .header__left {
+    width: 40%;
+  }
 }
 .header .header__rigth {
   display: flex;
   width: 40%;
   justify-content: flex-end;
 }
+@media (max-width: 700px) {
+  .header .header__rigth {
+    width: 60%;
+  }
+}
 
+.burger {
+  width: 3rem;
+  height: 2rem;
+  background: none;
+  border: none;
+  position: absolute;
+  padding: 0;
+  top: 50%;
+  left: 1.5rem;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 991px) {
+  .nav {
+    display: none;
+  }
+}
 .nav .nav__list {
   display: flex;
 }
@@ -549,6 +581,11 @@ a:hover {
   left: 0;
   z-index: 1000;
 }
+@media (max-width: 991px) {
+  .sidebar {
+    display: none;
+  }
+}
 
 .sidebar__header {
   height: 180px;
@@ -594,12 +631,23 @@ a:hover {
 .main {
   padding: 10rem 0 8rem 300px;
 }
+@media (max-width: 991px) {
+  .main {
+    padding-left: 0;
+  }
+}
 
 .container {
   max-width: 70rem;
   margin: 0 auto;
   padding-left: 5rem;
   padding-right: 5rem;
+}
+@media (max-width: 700px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .profile {
@@ -753,7 +801,8 @@ a:hover {
   display: flex;
 }
 .add-post .add-post__form .add-post__form-actions {
-  width: 20%;
+  width: 120px;
+  flex-shrink: 0;
   display: flex;
   justify-content: flex-end;
 }
@@ -785,7 +834,7 @@ a:hover {
 }
 .add-post .add-post__form .add-post__textarea {
   display: block;
-  width: 80%;
+  flex-grow: 1;
   font-family: inherit;
   font-size: 1.5rem;
   color: #fff;
@@ -793,6 +842,7 @@ a:hover {
   background: transparent;
   resize: none;
   height: 26px;
+  overflow: hidden;
 }
 .add-post .add-post__form .add-post__textarea::placeholder {
   color: #d2d2d2;
@@ -1256,7 +1306,6 @@ a:hover {
 .cabinet__form {
   width: 34rem;
 }
-
 .cabinet__avatar {
   flex-grow: 1;
   padding-left: 11rem;
@@ -1280,7 +1329,7 @@ a:hover {
 }
 
 .modal {
-  display: flex;
+  display: none;
   justify-content: center;
   flex-direction: column;
   align-items: center;
