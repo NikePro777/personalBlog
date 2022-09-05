@@ -15,7 +15,7 @@
     <title>EDatskiy | Profile</title>
   </head>
 
-  <body>
+  <body class="show-sidebar">
     <div class="page">
       <!-- Header-->
       <header class="header">
@@ -42,7 +42,7 @@
             </ul>
           </nav>
           <button class="burger" type="button">
-            <span></span>
+            <span>Открыть навигацию</span>
           </button>
         </div>
         <div class="header__rigth">
@@ -73,8 +73,32 @@
               src="assets/images/ava.jpg"
               alt="тут могла бы быть ваша реклама"
             />
-            <div class="profile__name">Евгений Датский</div>
-            <div class="profile__prof">блог будущего разработчика</div>
+            <div class="profile__header">
+              <div class="profile__name">Евгений Датский</div>
+              <div class="profile__prof">блог будущего разработчика</div>
+            </div>
+            <nav class="nav nav--mobile">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="index.html"> Главная </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link has-subnav" href="#">Статьи</a>
+                  <ul class="subnav">
+                    <li><a class="subnav__link" href="#">Создание сайтов</a></li>
+                    <li><a class="subnav__link" href="#">Интернет маркетинг</a></li>
+                    <li><a class="subnav__link" href="#">Продвижение видео</a></li>
+                  </ul>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="text.html">Обо мне</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="text.html">Реклама</a>
+                </li>
+              </ul>
+            </nav>
+      
             <ul class="social">
               <!-- target blank - чтобы соц сеть открывалась в новом окне -->
               <li class="social__item">
