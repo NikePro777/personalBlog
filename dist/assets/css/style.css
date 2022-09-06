@@ -661,6 +661,7 @@ a:hover {
     .nav .nav__list .nav__item .subnav .subnav__link {
         padding-left: 0;
         padding-right: 0;
+        font-size: 1.5rem;
     }
 
     .nav .nav__list .nav__item .subnav .subnav__link:hover {
@@ -674,6 +675,12 @@ a:hover {
 
 .nav .nav__list .nav__item:hover > .subnav {
     display: block;
+}
+
+@media (max-width: 991px) {
+    .nav .nav__list .nav__item:hover .nav__link {
+        background: none;
+    }
 }
 
 .nav .nav__list .nav__link {
@@ -709,6 +716,7 @@ a:hover {
     .nav .nav__list .nav__link {
         padding-left: 0;
         padding-right: 0;
+        font-size: 1.6rem;
     }
 }
 
@@ -725,8 +733,14 @@ a:hover {
 
 @media (max-width: 991px) {
     .sidebar {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
         top: 4rem;
+        padding-bottom: 1.5rem;
         height: calc(100vh - 4rem);
+        overflow: auto;
         -webkit-transform: translateX(-100%);
         transform: translateX(-100%);
         transition: -webkit-transform 0.2s linear;
@@ -768,6 +782,8 @@ a:hover {
 @media (max-width: 991px) {
     .sidebar__content {
         margin-top: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
     }
 }
 

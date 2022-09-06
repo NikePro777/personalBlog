@@ -425,7 +425,7 @@ body {
   color: #fff;
   line-height: 1.5;
 }
-body.no-scroll {
+body.no-scroll, body.show-sidebar {
   overflow: hidden;
 }
 
@@ -449,6 +449,22 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+}
+@media (max-width: 991px) {
+  .show-sidebar .page {
+    position: relative;
+  }
+  .show-sidebar .page:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
 }
 
 .page__title {
@@ -556,6 +572,7 @@ a:hover {
 }
 .nav--mobile {
   display: block;
+  margin: 3rem 0;
 }
 .nav .nav__list {
   display: flex;
@@ -657,7 +674,7 @@ a:hover {
   width: 300px;
   height: 100vh;
   background-color: #202020;
-  box-shadow: 5px 0 20px rgba(5, 5, 5, 0.1);
+  box-shadow: 5px 0 15px rgba(5, 5, 5, 0.1);
   position: fixed;
   top: 0;
   left: 0;
@@ -667,15 +684,14 @@ a:hover {
   .sidebar {
     display: flex;
     flex-direction: column;
+    height: calc(100vh - 4rem);
     top: 4rem;
     padding-bottom: 1.5rem;
-    height: calc(100vh - 4rem);
     overflow: auto;
     transform: translateX(-100%);
     transition: transform 0.2s linear;
   }
   .show-sidebar .sidebar {
-    display: block;
     transform: translateX(0);
   }
 }
@@ -703,7 +719,7 @@ a:hover {
 @media (max-width: 991px) {
   .sidebar__content {
     margin-top: 0;
-    flex-grow: 1;
+    flex-grow: 2;
   }
 }
 
@@ -761,6 +777,7 @@ a:hover {
   .profile {
     margin-top: -1.25rem;
     position: relative;
+    border-bottom: 1px solid #1c1c1c;
   }
 }
 .profile .profile__avatar {
