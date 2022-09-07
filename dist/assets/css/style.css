@@ -524,7 +524,7 @@ a:hover {
     width: 60%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 575px) {
     .header .header__left {
         width: 40%;
     }
@@ -538,7 +538,7 @@ a:hover {
     justify-content: flex-end;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 575px) {
     .header .header__rigth {
         width: 60%;
     }
@@ -850,13 +850,22 @@ a:hover {
     color: rgba(255, 255, 255, 0.4);
 }
 
+@media (max-width: 991px) {
+    .search .search__input {
+        font-size: 1.6rem;
+        padding-top: 0.9rem;
+        padding-bottom: 0.9rem;
+        height: 4rem;
+    }
+}
+
 .main {
     padding: 10rem 0 8rem 300px;
 }
 
 @media (max-width: 991px) {
     .main {
-        padding-left: 0;
+        padding: 6rem 0 0.5rem;
     }
 }
 
@@ -867,7 +876,7 @@ a:hover {
     padding-right: 5rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 575px) {
     .container {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -1029,6 +1038,13 @@ a:hover {
     margin-bottom: 3rem;
 }
 
+@media (max-width: 575px) {
+    .stories {
+        grid-template-columns: 140px 140px 140px 140px;
+        overflow: auto;
+    }
+}
+
 .stories .stories__item {
     background-color: #ccc;
     border-radius: 5px;
@@ -1099,6 +1115,12 @@ a:hover {
     border-radius: 5px;
 }
 
+@media (max-width: 575px) {
+    .add-post {
+        padding: 1.5rem;
+    }
+}
+
 .add-post .add-post__form {
     -ms-flex-align: center;
     align-items: center;
@@ -1127,6 +1149,20 @@ a:hover {
     transition: background-color 0.2s linear;
 }
 
+@media (max-width: 575px) {
+    .add-post .add-post__form .add-post__form-actions .add-post__file,
+.add-post .add-post__form .add-post__form-actions .add-post__send {
+        width: 3.4rem;
+        height: 3.4rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .add-post .add-post__form .add-post__form-actions {
+        width: 9rem;
+    }
+}
+
 .add-post .add-post__form .add-post__form-actions .add-post__file {
     background: #ebebeb url("../images/add-photo.svg") center no-repeat;
 }
@@ -1139,13 +1175,27 @@ a:hover {
     background-color: #ababab;
 }
 
+@media (max-width: 575px) {
+    .add-post .add-post__form .add-post__form-actions .add-post__file {
+        background-size: 30px;
+    }
+}
+
 .add-post .add-post__form .add-post__form-actions .add-post__send {
+    font-size: 0;
+    color: transparent;
+    background: #3137c9 url("../images/send.svg") center no-repeat;
     margin-left: 1.5rem;
-    background-color: #3137c9;
 }
 
 .add-post .add-post__form .add-post__form-actions .add-post__send:hover {
     background-color: #2c31b4;
+}
+
+@media (max-width: 575px) {
+    .add-post .add-post__form .add-post__form-actions .add-post__send {
+        background-size: 15px;
+    }
 }
 
 .add-post .add-post__form .add-post__textarea {
@@ -1189,6 +1239,12 @@ a:hover {
     padding: 2.5rem;
     border-radius: 5px;
     overflow: hidden;
+}
+
+@media (max-width: 575px) {
+    .post {
+        padding: 1.5rem;
+    }
 }
 
 .post__header {
@@ -1250,6 +1306,7 @@ a:hover {
     color: #fff;
     font-weight: 500;
     margin-bottom: 1.5rem;
+    line-height: 1.4;
 }
 
 .post__title a {
@@ -1258,6 +1315,10 @@ a:hover {
 
 .post__title--mb0 {
     margin-bottom: 0;
+}
+
+.post__title--open {
+    margin-bottom: 0.75rem;
 }
 
 .post__subtitle {
@@ -1349,11 +1410,27 @@ a:hover {
     align-items: center;
 }
 
+@media (max-width: 575px) {
+    .post__footer {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+}
+
 .post__data {
     display: -ms-flexbox;
     display: flex;
     line-height: 1.2rem;
     color: #828282;
+}
+
+@media (max-width: 575px) {
+    .post__data {
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
 }
 
 .post__data a {
@@ -1412,6 +1489,13 @@ a:hover {
     -ms-flex-pack: center;
     justify-content: center;
     margin-top: 8rem;
+}
+
+@media (max-width: 991px) {
+    .pagination {
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
 }
 
 .pagination .pagination__item {
